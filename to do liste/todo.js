@@ -6,7 +6,7 @@ function setDefaultState() {
   baseState[id] = {
     status: "new",
     id: id,
-    title: "This site uses 🍪to keep track of your tasks"
+    title: " "
   };
   syncState(baseState);
 }
