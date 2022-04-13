@@ -164,11 +164,3 @@ $(document).ready(function() {
   });
 }); 
 
-
-// <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
-/*
-
-
-check clicked
-    
-    */
