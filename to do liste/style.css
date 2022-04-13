@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+.body {
+  /*108deg,*/
+ /* background:linear-gradient(108deg,#65d9f6,#095ddb);*/
+ 
+ background-image:linear-gradient(107deg,#38a0d836,#337ab78c), url(bg.png);
+
+  font: 14px 'Reem Kufi', sans-serif;
+}
+.today{
+  font-size: 22px;
+  text-align: center;
+  color: #fff;
+}
+.container {
+  padding-top: 75px;
+}
+.todo-list {
+  margin: 20px 0;
+}
+.todo-list li {
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 7px;
+    position: relative;
+    word-break: break-word;
+}
+.todo-list li.danger {
+    background: linear-gradient(324deg,#47cbec88,#2e78e7);
+}
+.todo-list li.danger label {
+  text-decoration: line-through;
+  color: #fff;
+}
+.todo-list li.danger label .checkbox-mask {
+  border-color: transparent;
+}
+.todo-list li.danger label .checkbox-mask:after {
+  content: '\f00c';
+  font-family: 'FontAwesome';
+  display: block;
+  position: absolute;
+  top: -3px;
+  left: 0;
+}
+.todo-list li .checkbox {
+  margin: 0;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.todo-list li label {
+  display: block;
+  padding-right: 10px;
+}
+.todo-list li label input[type="checkbox"] {
+  visibility: hidden;
+}
+.todo-list li label .checkbox-mask {
+  display: block;
+  border: 2px solid #666;
+  width: 12px;
+  height: 12px;
+  border-radius: 2.5px;
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 4px;
+}
+.todo-list li .close {
+  display: none;
+  position: absolute;
+  width: 12px;
+  height: 16px;
+  top: 50%;
+  margin-top: -8px;
+  right: 10px;
+  font-size: 16px;
+}
+.todo-list li .close .fa {
+  line-height: 16px;
+}
+.todo-list li:hover .close {
+  display: block;
+}
+.has-feedback .fa {
+  line-height: 35px;
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 10;
+  display: block;
+  color: #666;
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
+}
+.has-feedback .fa:hover {
+  color: #999;
+}
+.add-control {
+  margin-top: 20px;
+  position: relative;
+}
+.add-control .form-control {
+  padding-right: 25px;
+}
+.form-control,
+.form-control:focus,
+.form-control:active,
+.form-control:active:focus {
+  border: none;
+  padding: 10px 15px;
+  outline: none;
+}
+.form-control {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.form-control:focus {
+  -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.2);
+          box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+p .fa-warning{
+  font-size: 16px;
+}
+p .fa-ban {
+  margin: 15px 0 10px;
+  font-size: 42px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.574); 
+}
+h4 {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.animated {
+  -webkit-animation-duration: 0.45s;
+          animation-duration: 0.45s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.animated.fast {
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
+}
+@media (max-width: 768px){
+  .col-xs-offset-3 {
+      margin-left: 10%;
+  }
+}
+  
+@media (max-width: 768px){
+  .col-xs-6 {
+    width: 80%;
+  }
+}
+
+@viewport {
+    width: device-width; 
+    zoom: 1; 
+}
+  
+@media (min-width: 992px){
+  .container {
+      width: 100%;
+      max-width: 1150PX;
+  }
+} 
+@media (max-width: 680px){
+  svg {
+      width: 70px;
+      height: 70px;
+  
+  }
+}
